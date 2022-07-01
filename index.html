@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!--   <meta http-equiv="refresh" content="30"> -->
+    <!--   <meta http-equiv="refresh" content="30"> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -24,6 +24,12 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+  
+  ></script>
+  
   </head>
   <body>
     <!-- ===========MAin Container=============-->
@@ -33,12 +39,11 @@
         <!-- Logo -->
         <div class="logo">
           <a href="#"
-            ><img src="./img/InfogenLogo.png" width="50px" height="52px" alt=""
+            ><img src="./img/InfogenLogo.png" alt=""
           /></a>
           <span>Infogen</span>
           <button id="removebtn">X</button>
         </div>
-
 
         <div class="nav-toggler" id="toggle">
           <span></span>
@@ -46,13 +51,23 @@
 
         <!-- Menu option -->
         <ul class="nav">
-          <li>
-            <a href="#home" class="active"
+          <li class="home1 active">
+            <a href="#technical_exp1"
               ><i class="fa fa-home"><span>HOME</span></i></a
             >
           </li>
-          <li id="studios_btn">
-            <a href="#technical_exp"
+          <li class="who_we_are1">
+            <a href="#who_we_are1"
+              ><i class="fa fa-users"><span>ABOUT</span></i></a
+            >
+          </li>    
+          <li class="core_value1">
+            <a href="#core_value1"
+              ><i class="fa fa-rocket"><span>WHAT WE DO</span></i></a
+            >
+          </li>
+          <li class="technical_exp1" id="studios_btn">
+            <a href="#whatwedo1"
               ><i class="fa fa-laptop-code"><span>STUDIOS</span></i></a
             >
             <!--   <ul class="studios_show">
@@ -69,23 +84,14 @@
               <li><a href="#">Quality Control & Assurance</a></li>
           </ul> -->
           </li>
-          <li>
-            <a href="#who_we_are"
-              ><i class="fa fa-users"><span>ABOUT</span></i></a
-            >
-          </li>
-          <li>
-            <a href="#whatwedo"
-              ><i class="fa fa-rocket"><span>WHAT WE DO</span></i></a
-            >
-          </li>
-          <li>
-            <a href="#wanttojoin"
+
+          <li class="whychooseus1">
+            <a href="#whychooseus1"
               ><i class="fa fa-user-graduate"><span>CAREERS</span></i></a
             >
           </li>
-          <li>
-            <a href="#wanttojoin"
+          <li class="wanttojoin1">
+            <a href="#wanttojoin1"
               ><i class="fa fa-address-book"><span>CONTACT</span></i></a
             >
           </li>
@@ -119,13 +125,14 @@
       <!-- ====== Sidebar ENd ========-->
       <div class="main_content">
         <!-- ===== Home section Start ========= -->
-        <section id="home" class="home section">
+        <section id="home1" class="home section">
           <div class="container">
             <div class="row">
               <div class="home_info">
                 <h1 class="tagline">
                   GLOBAL SOFTWARE DEVELOPMENT COMPANY WITH
-                  <span class="typing">EXTENSIVE EXPERIENCE</span>
+                   <span class="texttype_typing"> 
+                   </span> 
                 </h1>
               </div>
 
@@ -158,7 +165,7 @@
         <!-- ===== Home section End ========= -->
 
         <!-- ===== who_we_are section start ========= -->
-        <section class="who_we_are section" id="who_we_are">
+        <section id="who_we_are1" class="who_we_are section">
           <div class="row">
             <div class="whoweare1 col_1">
               <h1 class="page_header">WHO WE ARE</h1>
@@ -190,7 +197,7 @@
         <!-- ===== who_we_are section End ========= -->
 
         <!-- ===== core_value section start ========= -->
-        <section class="core_value section">
+        <section id="core_value1" class="core_value section">
           <div class="container">
             <div class="row">
               <div class="coreValue_part1">
@@ -219,22 +226,22 @@
                 </p>
                 <div class="countryName">
                   <span class="country">
-                    <i class="icon"></i>
+                    <img src="./img/country1.png" alt="">
                     <span>UNITED STATES</span>
                   </span>
 
                   <span class="country">
-                    <i class="icon"></i>
+                    <img src="./img/country2.png" alt="">
                     <span>CANADA</span>
                   </span>
 
                   <span class="country">
-                    <i class="icon"></i>
+                    <img src="./img/country3.png" alt="">
                     <span>EUROPE</span>
                   </span>
 
                   <span class="country">
-                    <i class="icon"></i>
+                    <img src="./img/country4.png" alt="">
                     <span>INDIA</span>
                   </span>
                 </div>
@@ -245,7 +252,7 @@
         <!-- ===== core_value section End ========= -->
 
         <!-- ===== What_we_do  section start ========= -->
-        <section class="whatwedo section" id="whatwedo">
+        <section id="whatwedo1" class="whatwedo section">
           <div class="container">
             <div class="row">
               <h1>WHAT WE DO</h1>
@@ -286,7 +293,7 @@
         <!-- ===== What_we_do section End ========= -->
 
         <!-- ===== technical_experties section start ========= -->
-        <section class="technical_exp section" id="technical_exp">
+        <section id="technical_exp1" class="technical_exp section">
           <div class="container">
             <div class="row">
               <h1>TECHNICAL EXPERTISE</h1>
@@ -342,12 +349,12 @@
         <!-- ===== technical_experties section End ========= -->
 
         <!-- ===== whychooseus section start ========= -->
-        <section class="whychooseus section">
+        <section id="whychooseus1" class="whychooseus section">
           <div class="container">
             <div class="row">
-              <h1 id="head">WHY CHOOSE US</h1>
+              <h1 id="head">WHY CHOOSE US ?</h1>
               <div class="whychooseus1">
-                <div class="col box1">
+                <div class="col box1" id="colbox1">
                   <h5>GAME ZONE</h5>
                   <img src="./img/whychoose11.png" alt="" />
                   <p>
@@ -407,7 +414,7 @@
         <!-- ===== whychooseus section End ========= -->
 
         <!-- ===== wanttojoin section start ========= -->
-        <section class="wanttojoin section" id="wanttojoin">
+        <section id="wanttojoin1" class="wanttojoin section">
           <div class="container">
             <div class="row">
               <h1>WANT TO JOIN INFOGEN-LABS?</h1>
@@ -493,7 +500,7 @@
                       type="text"
                       id="fname"
                       name="fname"
-                      placeholder="name"
+                      placeholder="Name"
                       width="100%"
                     /><br />
 
@@ -508,15 +515,13 @@
                   </form>
                 </div>
               </div>
-
-            
             </div>
           </div>
         </section>
         <!-- ===== wanttojoin section End ========= -->
 
         <!-- ===== footer section End ========= -->
-          <footer class="footer">
+        <footer class="footer">
           <div class="container">
             <div class="row">
               <div class="col1">
@@ -588,14 +593,52 @@
               </div>
             </div>
           </div>
-        </footer> 
+        </footer>
         <!-- ===== footer section End ========= -->
       </div>
     </div>
 
-    <!-- ===========Main Container End=============-->
+    <!-- ===========MAin Container End=============-->
 
     <!-- ==================JS files==========================-->
+    <!--   <script>
+      const sections = document.querySelectorAll("section");
+      const navli = document.querySelectorAll(".sidebar .nav li");
+
+      console.log(sections);
+      console.log(navli);
+
+      window.addEventListener("scroll", () => {
+        let current = '';
+        console.log("==>"+pageYOffset);
+      });
+
+      /*
+      window.addEventListener('scroll',()=> {
+        let current = '';
+      
+        console.log("==>"+pageYOffset);
+        sections.forEach( section =>{
+          const sectionTop = section.offsetTop; 
+          const sectionHeight = section.clientHeight;
+          if(pageYOffset >= (sectionTop - sectionHeight / 3))
+          {
+            current = section.getAttribute('id');
+          }
+
+          navli.forEach( li=> {
+            li.classList.remove('active');
+            if(li.classList.contains(current)){
+              li.classList.add('active')
+            }
+          })
+
+        
+        });
+
+        console.log(current);
+      });*/
+    </script> -->
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/style.js"></script>
